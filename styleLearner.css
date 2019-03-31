@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(151, 209, 209);
+}
+
+.cardLea{
+    width: 150px;
+    height: 250px;
+    margin: 15px;
+    float: left;
+}
+
+.sora{
+    border-radius: 5px;
+    width: 100%;
+    /* margin: 30% 5%; */
+}
+
+.cardLea > .front{
+    position: absolute;
+    background-color: #F4FAFE;
+    width: 150px;
+    height: 250px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.cardLea > .back{
+    position: absolute;
+    background-color: rgb(226, 147, 43);
+    width: 150px;
+    height: 250px;
+    border-radius: 5px;
+    /* padding: 10px; */
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.MyClass11 {transform: perspective(600px) rotateX(0deg);}
+.MyClass22 {transform: perspective(600px) rotateX(180deg);}
+
+.MyClass1 {transform: perspective(600px) rotateX(-180deg);}
+.MyClass2 {transform: perspective(600px) rotateX(0deg);}
